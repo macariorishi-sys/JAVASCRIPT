@@ -1,0 +1,6 @@
+const time=new Date()
+console.log(time)
+const time1=new Date(0)
+console.log(time1)
+const time2=new Date(10000)
+console.log(time2)
