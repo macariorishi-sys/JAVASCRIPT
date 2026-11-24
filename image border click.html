@@ -1,0 +1,28 @@
+<html>
+<body id="my-body">
+    <button id="my-button">Click Me</button>
+    <p id="messageText">Waiting for your click...</p>
+    <img id="thorImage" src="thor.JPG" width="600" height="500" style="display:none; margin:auto;">
+        <img id="JEAN GREY" src="JEAN GREY.jpg" width="600" height="500" style="display:none; margin:auto;">
+    <script>
+        const button = document.getElementById("my-button");
+        const textMessage = document.getElementById("messageText");
+        const image = document.getElementById("thorImage");
+        const image1 = document.getElementById("JEAN GREY");
+        const body = document.getElementById("my-body");
+        function handleButtonClick() {
+            textMessage.textContent = "Thor Image Displayed!";
+            image.style.display = "block";
+             image1.style.display = "block";
+            body.style.backgroundColor = 'blue';
+        }
+        button.addEventListener('click', handleButtonClick);
+        image.addEventListener("click",function(){
+            image.style.border="5px solid green";
+        });
+        image1.addEventListener("click",function(){
+            image1.style.border="5px solid red";
+        });
+    </script>
+</body>
+</html>

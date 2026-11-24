@@ -1,0 +1,13 @@
+const vehicles=['car','bike','truck']
+vehicles.push('bus','cycle','aeroplane','SUV','van')
+console.log(vehicles)
+vehicles.pop()
+console.log(vehicles)
+vehicles.shift()
+console.log(vehicles)
+vehicles.unshift('train')
+console.log(vehicles)
+console.log(vehicles.indexOf('truck'))
+console.log(vehicles.indexOf('airplane'))
+vehicles.splice(2,3)
+console.log(vehicles)
